@@ -7,7 +7,14 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <h1 className="text_home">BEESHOP</h1>
+        <div className="text_red">
+          <h1 className="text_home">
+            <a className="beeshop" href="/products">
+              BEESHOP
+            </a>
+          </h1>
+        </div>
+
         <img className="fonen" src={logo} alt="ygjg" />
         <footer class="footer">
           <ul class="social-icon">

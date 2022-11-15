@@ -76,6 +76,36 @@
 .text_home {
   position: absolute;
   color: #f1c40f;
-  margin-left: 600px;
-  margin-top: 150px;
+  margin-top: 160px;
+}
+.text_red {
+  display: flex;
+  justify-content: center;
+}
+.beeshop {
+  text-decoration: none;
+  color: #f1c40f;
+}
+
+/*  */
+
+.text_pr {
+  color: white;
+}
+
+.list {
+  margin-left: 10px;
+}
+
+.strelka {
+  text-decoration: none;
+  color: #f1c40f;
+  background-color: rgb(25, 25, 25);
+  border: none;
+  font-size: 30px;
+}
+.strelka:hover {
+  color: white;
+  transition: 2s;
+  cursor: pointer;
 }

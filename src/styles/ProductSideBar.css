@@ -1,5 +1,6 @@
 .sideBar {
-  background: gray;
+  background: rgb(53, 53, 53);
   width: 20%;
-  height: 90vh;
+  height: 100ch;
+  color: #f1c40f;
 }

@@ -26,16 +26,15 @@ const ProductsList = ({ page, setPage, changeSideBarStatus }) => {
   }
 
   return (
-    <div>
-      <h2>Products List</h2>
+    <div className="list">
+      <h2 className="text_pr">Products List</h2>
 
-      <Button
+      <button
+        className="strelka"
         style={{ fontWeight: "bold" }}
-        onClick={changeSideBarStatus}
-        color="secondary"
-        size="small">
-        Filter&Search Menu
-      </Button>
+        onClick={changeSideBarStatus}>
+        ➔
+      </button>
       {"  "}
       <div
         style={{
