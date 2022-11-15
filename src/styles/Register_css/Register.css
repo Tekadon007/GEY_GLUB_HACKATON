@@ -1,0 +1,59 @@
+.register_panel {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  flex-direction: column;
+}
+.double-border-button {
+  background-color: rgb(25, 25, 25);
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.4s;
+}
+.double-border-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+.double-border-button:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+/*  */
+
+.reg_text {
+  color: #f1c40f;
+}
+
+.reg_input1 {
+  color: white;
+  background-color: rgb(52, 52, 52);
+  padding: 10px;
+  border-radius: 20px;
+}
+.reg_input2 {
+  color: white;
+
+  background-color: rgb(52, 52, 52);
+  padding: 10px;
+  border-radius: 20px;
+}
