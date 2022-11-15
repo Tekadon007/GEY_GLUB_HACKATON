@@ -41,19 +41,41 @@
 /*  */
 
 .reg_text {
-  color: #f1c40f;
+  color: white;
 }
 
 .reg_input1 {
   color: white;
+  border: 1px solid #f1c40f;
   background-color: rgb(52, 52, 52);
   padding: 10px;
   border-radius: 20px;
 }
 .reg_input2 {
   color: white;
-
+  border: 1px solid #f1c40f;
   background-color: rgb(52, 52, 52);
   padding: 10px;
   border-radius: 20px;
+}
+.reg_input3 {
+  border: 1px solid #f1c40f;
+  margin-right: 11px;
+  color: white;
+  background-color: rgb(52, 52, 52);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.emoji {
+  color: #f1c40f;
+  margin-right: 10px;
+}
+
+/*  */
+.text_home {
+  position: absolute;
+  color: #f1c40f;
+  margin-left: 600px;
+  margin-top: 150px;
 }

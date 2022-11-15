@@ -24,6 +24,7 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import getProducts from "../../contexts/ProductContextProvider";
 import axios from "axios";
+import EmojiNatureTwoToneIcon from "@mui/icons-material/EmojiNatureTwoTone";
 
 const pages = [
   {
@@ -108,9 +109,8 @@ function ResponsiveAppBar() {
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <LocalMallIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}
-            />
+            <EmojiNatureTwoToneIcon className="emoji" />
+
             <Typography
               variant="h6"
               noWrap
@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
                 color: "inherit",
                 textDecoration: "none",
               }}>
-              MAGAZINE
+              BEESHOP
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -205,6 +205,7 @@ function ResponsiveAppBar() {
               </IconButton>
             </Box>
             <input
+              className="reg_input3"
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}

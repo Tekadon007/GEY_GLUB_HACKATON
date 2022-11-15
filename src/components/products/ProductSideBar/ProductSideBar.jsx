@@ -23,12 +23,6 @@ const ProductSideBar = ({ isSideBar, setPage }) => {
 
   return isSideBar ? (
     <div className="sideBar">
-      <input
-        type="text"
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-        placeholder="Search..."
-      />
       <FilterProduct />
     </div>
   ) : null;
