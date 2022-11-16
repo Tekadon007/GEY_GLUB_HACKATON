@@ -1,6 +1,8 @@
-.sideBar {
-  background: rgb(53, 53, 53);
-  width: 20%;
-  height: 100ch;
-  color: #f1c40f;
+.aside {
+  color: #fff;
+  width: 250px;
+  padding-left: 20px;
+  height: 100vh;
+  background-image: linear-gradient(30deg, #745e09, #f1c40f);
+  border-top-right-radius: 80px;
 }

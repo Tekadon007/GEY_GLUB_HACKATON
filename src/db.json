@@ -9,14 +9,6 @@
       "id": 2
     },
     {
-      "name": "MacBook Pro 13",
-      "description": "8-ядерный процессор 10-ядерный графический процессор 16-ядерная система Neural Engine 8 ГБ объединённой памяти SSD-накопитель 256 ГБ Дисплей Retina 13 дюймов Два порта Thunderbolt 4 Magic Keyboard Touch Bar и Touch ID Трекпад Force Touch Адаптер питания USB-C 67 Вт",
-      "price": 1500,
-      "picture": "https://www.istore.kg/media/products/mbp-spacegray-gallery1-202206.webp",
-      "type": "electronics",
-      "id": 3
-    },
-    {
       "name": "MacBook Air 13",
       "description": "8-ядерный процессор 10-ядерный графический процессор 16-ядерная система Neural Engine 8 ГБ объединённой памяти SSD-накопитель 512 ГБ Liquid Retina 13.6 дюймов Камера FaceTime 1080p Два порта Thunderbolt 4 Порт MagSafe 3 Magic Keyboard with Touch ID Адаптер питания USB-C 35 Вт",
       "price": 1900,

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import ProductCard from "../ProductCard/ProductCard";
 import Pagination from "@mui/material/Pagination";
-import Button from "@mui/material/Button";
 
+import "./style.css";
 const ProductsList = ({ page, setPage, changeSideBarStatus }) => {
   const { products, getProducts } = useProducts();
 
@@ -50,7 +50,13 @@ const ProductsList = ({ page, setPage, changeSideBarStatus }) => {
         )}
       </div>
       <Pagination
-        style={{ display: "flex", justifyContent: "center" }}
+        color="primary"
+        className="pag"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          color: "red",
+        }}
         count={count}
         page={page}
         onChange={handlePage}

@@ -5,3 +5,17 @@ body {
   overflow-x: hidden;
   background-color: rgb(25, 25, 25);
 }
+
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #f1c40f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}

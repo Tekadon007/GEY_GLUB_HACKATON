@@ -22,14 +22,19 @@ const ProductCard = ({ item }) => {
         <img className="productCard_img" src={item.picture} alt="" />
         <h3 className="productCard_price">{item.price}$</h3>
         <div className="productCard_buttons">
-          <Button
-            style={{ fontWeight: "bold" }}
+          <button
+            style={{
+              fontWeight: "bold",
+              backgroundColor: "rgb(25, 25, 25)",
+              color: "#f1c40f",
+              border: "2px solid #f1c40f",
+              cursor: "pointer",
+            }}
             onClick={() => navigate(`/details/${item.id}`)}
             variant="contained"
-            color="success"
             size="small">
             Details
-          </Button>{" "}
+          </button>
           <Fab
             size="small"
             onClick={() => navigate(`/edit/${item.id}`)}

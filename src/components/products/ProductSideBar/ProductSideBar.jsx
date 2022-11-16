@@ -22,7 +22,7 @@ const ProductSideBar = ({ isSideBar, setPage }) => {
   }, [searchParams]);
 
   return isSideBar ? (
-    <div className="sideBar">
+    <div className="aside">
       <FilterProduct />
     </div>
   ) : null;
