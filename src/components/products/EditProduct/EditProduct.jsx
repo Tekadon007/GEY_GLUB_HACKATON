@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useNavigate, useParams } from "react-router-dom";
-import { Button } from "@mui/material";
 
 const EditProduct = () => {
   const { getProductDetails, productDetails, saveEditedProduct } =
@@ -41,58 +40,65 @@ const EditProduct = () => {
     <>
       {product ? (
         <>
-          <h2>Add Product</h2>
+          <div className="register_panel_2">
+            <h2 className="reg_text">Edit Product</h2>
 
-          <input
-            type="text"
-            value={product.name}
-            placeholder="Title"
-            name="name"
-            onChange={handleInp}
-          />
-          <br />
-          <input
-            type="text"
-            value={product.description}
-            placeholder="Description"
-            name="description"
-            onChange={handleInp}
-          />
-          <br />
-          <input
-            type="number"
-            value={product.price}
-            placeholder="Price"
-            name="price"
-            onChange={handleInp}
-          />
-          <br />
-          <input
-            type="text"
-            value={product.picture}
-            placeholder="Picture"
-            name="picture"
-            onChange={handleInp}
-          />
-          <br />
-          <input
-            type="text"
-            value={product.type}
-            placeholder="Type"
-            name="type"
-            onChange={handleInp}
-          />
-          <br />
+            <input
+              className="reg_input1"
+              type="text"
+              value={product.name}
+              placeholder="Title"
+              name="name"
+              onChange={handleInp}
+            />
+            <br />
+            <input
+              className="reg_input1"
+              type="text"
+              value={product.description}
+              placeholder="Description"
+              name="description"
+              onChange={handleInp}
+            />
+            <br />
+            <input
+              className="reg_input1"
+              type="number"
+              value={product.price}
+              placeholder="Price"
+              name="price"
+              onChange={handleInp}
+            />
+            <br />
+            <input
+              className="reg_input1"
+              type="text"
+              value={product.picture}
+              placeholder="Picture"
+              name="picture"
+              onChange={handleInp}
+            />
+            <br />
+            <input
+              className="reg_input1"
+              type="text"
+              value={product.type}
+              placeholder="Type"
+              name="type"
+              onChange={handleInp}
+            />
+            <br />
 
-          <Button
-            onClick={() => {
-              saveEditedProduct(product);
-              navigate("/products");
-            }}
-            variant="contained"
-            color="success">
-            Save Changes
-          </Button>
+            <button
+              className="double-border-button"
+              onClick={() => {
+                saveEditedProduct(product);
+                navigate("/products");
+              }}>
+              {" "}
+              Save Changes
+            </button>
+          </div>
         </>
       ) : (
         <h3>Loading...</h3>

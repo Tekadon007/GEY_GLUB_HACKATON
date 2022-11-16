@@ -1,52 +1,93 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useProducts } from '../../../contexts/ProductContextProvider';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useProducts } from "../../../contexts/ProductContextProvider";
 
 const AddProduct = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const { addProduct } = useProducts();
+  const { addProduct } = useProducts();
 
-    const [product, setProduct] = useState({
-        name: '',
-        description: '',
-        price: '',
-        picture: '',
-        type: ''
-    });
+  const [product, setProduct] = useState({
+    name: "",
+    description: "",
+    price: "",
+    picture: "",
+    type: "",
+  });
 
-    const handleInp = e => {
-        if(e.target.name === 'price'){
-            let obj = {
-                ...product,
-                price: Number(e.target.value)
-            };
-            setProduct(obj);
-        } else {
-            let obj = {
-                ...product,
-                [e.target.name]: e.target.value
-            };
-            setProduct(obj);
-        };
-    };
+  const handleInp = e => {
+    if (e.target.name === "price") {
+      let obj = {
+        ...product,
+        price: Number(e.target.value),
+      };
+      setProduct(obj);
+    } else {
+      let obj = {
+        ...product,
+        [e.target.name]: e.target.value,
+      };
+      setProduct(obj);
+    }
+  };
 
   return (
     <>
-        <h2>Add Product</h2>
+      <div className="register_panel_2">
+        <h2 className="reg_text">Add Product</h2>
 
-        <input type="text" placeholder="Title" name="name" onChange={handleInp} /><br />
-        <input type="text" placeholder="Description" name="description" onChange={handleInp} /><br />
-        <input type="number" placeholder="Price" name="price" onChange={handleInp} /><br />
-        <input type="text" placeholder="Picture" name="picture" onChange={handleInp} /><br />
-        <input type="text" placeholder="Type" name="type" onChange={handleInp} /><br />
+        <input
+          className="reg_input2"
+          type="text"
+          placeholder="Title"
+          name="name"
+          onChange={handleInp}
+        />
+        <br />
+        <input
+          className="reg_input2"
+          type="text"
+          placeholder="Description"
+          name="description"
+          onChange={handleInp}
+        />
+        <br />
+        <input
+          className="reg_input2"
+          type="number"
+          placeholder="Price"
+          name="price"
+          onChange={handleInp}
+        />
+        <br />
+        <input
+          className="reg_input2"
+          type="text"
+          placeholder="Picture"
+          name="picture"
+          onChange={handleInp}
+        />
+        <br />
+        <input
+          className="reg_input2"
+          type="text"
+          placeholder="Type"
+          name="type"
+          onChange={handleInp}
+        />
+        <br />
 
-        <button onClick={() => {
+        <button
+          className="double-border-button"
+          onClick={() => {
             addProduct(product);
-            navigate('/products');
-        }}>Save</button>
+            navigate("/products");
+          }}>
+          Save
+        </button>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default AddProduct
+export default AddProduct;

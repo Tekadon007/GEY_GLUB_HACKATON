@@ -7,6 +7,15 @@
   margin-top: 15%;
   flex-direction: column;
 }
+.register_panel_2 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  flex-direction: column;
+}
 .double-border-button {
   background-color: rgb(25, 25, 25);
   text-decoration: none;
@@ -42,6 +51,18 @@
 
 .reg_text {
   color: white;
+}
+
+.reg_text1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name_title {
+  color: #f1c40f;
 }
 
 .reg_input1 {
